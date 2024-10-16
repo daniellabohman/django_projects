@@ -1,0 +1,166 @@
+/* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+/* General Body Styles */
+/* Add a background image for the body */
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/static/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-container {
+    flex: 1; 
+    padding: 20px;
+}
+
+/* Navbar Styles */
+
+/* Custom Navbar Style */
+.custom-navbar {
+    background-color: #170ad3; /* Your desired background color */
+    margin-bottom: 20px; /* Spacing below the navbar */
+    border-radius: 5px; /* Optional: Round corners */
+}
+.navbar {
+    margin-bottom: 20px; /* space below the navbar */
+    border-radius: 5px; /*Round corners */
+}
+/* Custom Navbar Styles */
+.custom-navbar {
+    background: linear-gradient(90deg, rgba(70, 30, 150, 0.8) 0%, rgba(30, 150, 170, 0.5) 100%); /* Gradient with transparency */
+    transition: background 0.5s ease; /* Smooth transition for background changes */
+}
+
+/* Navbar Link Styles */
+.custom-navbar .navbar-nav .nav-link {
+    color: #fff; /* White text */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover Effect for Navbar Links */
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #17a2b8; /* Change color on hover */
+}
+
+/* Ensure Consistency */
+.nav-item.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-item.nav-link:hover {
+    color: #17a2b8;
+}
+
+
+/* Container Styles */
+.custom-container {
+    max-width: 960px;          /* Limit container width */
+    margin: 0 auto;            /* Center the container */
+    padding: 20px;             /* Padding around content */
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    border-radius: 12px;       /* Softer rounded corners */
+    box-shadow: none;          
+    backdrop-filter: blur(8px); /* Blur effect to enhance the background view */
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, rgba(64, 25, 142, 0.8) 0%, rgba(3, 69, 81, 0.5) 100%);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent; /* Make text color transparent */
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Spacing below headers */
+}
+
+/* Header Styles */
+h1 {
+    color: #007bff; /* Header color */
+    margin: 0 auto;  
+    margin-bottom: 20px; /* Spacing below headers */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto; /* push the footer to the bottom of the page */
+    padding: 10px 0; /* Padding inside footer */
+    text-align: center; /* Centered text */
+    background: linear-gradient(90deg, rgba(70, 30, 150, 0.8) 0%, rgba(30, 150, 170, 0.5) 100%); /* Gradient with transparency */
+    transition: background 0.5s ease; /* Smooth transition for background changes */
+    color: #e8e8ed; /* Light text */
+}
+
+/* General Container Styles */
+/* Container Styles */
+.contact-custom-container {
+    max-width: 400px;          /* Limit container width */
+    margin: 0 auto;            /* Center the container */
+    padding: 20px;             /* Padding around content */
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    border-radius: 12px;       /* Softer rounded corners */
+    box-shadow: none;          
+    backdrop-filter: blur(8px); /* Blur effect to enhance the background view */
+}
+
+/* Form Styles */
+form {
+    background: linear-gradient(90deg, rgba(70, 30, 150, 0.8) 0%, rgba(30, 150, 170, 0.5) 100%); /* Gradient background */
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    color: #fff; /* White text for contrast */
+}
+
+/* Form Group Styles */
+form .form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Label Styles */
+form label {
+    color: #fff; /* White label text for contrast */
+}
+
+/* Input and Textarea Styles */
+form input,
+form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding for input fields */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Placeholder Styles */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder text */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded button */
+    border: none; /* Remove border */
+    background-color: #3a3f5c; /* Darker button color */
+    color: #fff; /* White button text */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #5a617f; /* Lighter color on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 300px) {
+    .contact-container {
+        padding: 10px; /* Less padding on small screens */
+    }
+}

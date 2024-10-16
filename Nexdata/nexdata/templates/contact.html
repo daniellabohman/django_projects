@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title>Kontakt</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="contact-custom-container"> <!-- Use custom-container class -->
+        <h1 class="text-center">{{ contact_text }}</h1>
+        <div class="contact-container">
+            <form method="post" class="border p-4 rounded shadow">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    {{ form.name }}
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    {{ form.email }}
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    {{ form.message }}
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

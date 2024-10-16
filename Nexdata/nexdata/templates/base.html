@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}"> <!-- Include the portfolio CSS -->
+
+    {% block title %}
+    {% endblock title %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-item nav-link" href="{% url 'main' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+              <a class="nav-item nav-link" href="{% url 'contact' %}">Kontakt</a>            
+              <a class="nav-item nav-link" href="{% url 'about' %}">Om Nexdata</a>
+          </div>
+      </div>
+    </nav>
+
+    <main class="custom-container">
+      {% block content %}
+      {% endblock content %}
+    </main>
+
+    <footer>
+        <p>2024 - Nexdata</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
